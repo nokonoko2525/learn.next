@@ -5,7 +5,7 @@ import { Post } from '../types/post';
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<Post[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [error] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchData() {
